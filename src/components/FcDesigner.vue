@@ -60,13 +60,12 @@ export default {
         createfrom_one(index1,index2){
             console.log("获取到点击的选项: "+this.menuList[index1].list[index2].label+" ,并在container-from里生成对应的表单组件");
             //在点击左侧选项框时生成唯一id，用clicklist数组记录表单属性和表单元素类型（input/number/radio）
-            this.unid=createunId();
+            this.unid=createunId(this.clickList);
             this.formname=this.menuList[index1].list[index2].name;
             this.formprop=this.menuList[index1].list[index2];
-            let a=this.formprop;
             console.log("this.formprop=====a",this.menuList[index1].list[index2]);
             //在clickList数组末尾新增一项
-            this.clickList.push({name: this.formname,id:this.unid,value:a});
+            this.clickList.push({name: this.formname,id:this.unid,value:this.formprop});
             // this.clickList[0].value.placeholder="hhhhhhhhhhhhhh";
             // console.log("更新后的clicklist数组2",this.clickList);
 
