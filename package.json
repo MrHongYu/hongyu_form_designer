@@ -1,0 +1,21 @@
+{
+  "name": "hongyu_form_designer",
+  "version": "1.0.0",
+  "description": "vue可视化表单设计器",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vue/cli-service": "^4.5.3",
+    "@vue/composition-api": "^1.3.3",
+    "vue": "^2.6.11",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "dependencies": {
+    "element-ui": "^2.15.6"
+  }
+}
